@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+
+div.headerContainer {
+    display: flex;
+    height: 80px;
+    width: 100vw;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #F5C03B;
+    border-bottom: 1px solid #F5C03B;
+}
+
+div.headerContainer div.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: Dancing Script;
+    font-size: 18px;
+    color: #fff;
+}
+div.headerContainer div.logo h1 {
+    margin-left: 3px;
+}
+div.headerContainer div.logo img {
+    margin-left: 10px;
+    width: 70px;
+    height:70px;
+}
+
+.links {
+    display: flex;
+    max-width: 50%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-right: 10px;
+
+}
+.link {
+    padding: 10px;
+    margin-left: 10px;
+    width: 250px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.link p{
+    font-family: Roboto;
+    padding-bottom: 3px;
+    font-weight: 700;
+    border-bottom: 1px solid #fff ;
+}
+
+.link:hover p {
+    border-bottom: 1px solid #F5C03B ;
+
+}
+.link:hover {
+    transform: translateY(-3px);
+    transition: all 0.2s;
+    background-color: #fff;
+    color: #F5C03B;
+    border-radius: 3px;
+    opacity: .9;
+}

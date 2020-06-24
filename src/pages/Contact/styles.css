@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+div.contactContainer {
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding: 60px 100px;
+
+}
+
+div.inputable {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputable input {
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #F5C03B;
+    background: #ffffff;
+}
+
+.inputable p {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    font-family: Roboto;
+    color: #F5C03B;
+    padding-bottom: 5px;
+}
+
+.inputable button {
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #F5C03B;
+    color: white;
+    background: #F5C03B;
+    cursor: pointer;
+}
+
+.inputable button:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+    transition: all 0.2s;
+}
+
+.inputable textarea {
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #F5C03B;
+    height: 200px;
+    resize: none;
+}
+
+
+.inputable ::placeholder {
+color: #F5C03B;
+text-align: left;
+}
+
+div.otherInfor{
+    position: absolute;
+    left: 60%;
+    font-size: 14px;
+    font-family: Roboto;
+}
+.otherInfor ul {
+    list-style: none;
+    font-size: 18px;
+    text-align: left;
+    font-family: Roboto;
+    color: #F5C03B;
+}
+
+.otherInfor ul li {
+    line-height: 30px;
+}
+
+
+.logos {
+    display: flex;
+    padding-top: 10px;
+}
+.otherInfor a {
+    color: #F5C03B;
+    font-size: 35px;
+    flex-direction: row;
+    padding: 3px;
+}
