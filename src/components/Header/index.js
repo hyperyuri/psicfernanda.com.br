@@ -14,7 +14,7 @@ function Header() {
           </div>
         </Link>
         <div className="links">
-          <Link className="link" to="/sobre">
+          <Link className="link" to="/">
             <p>Sobre mim</p>
           </Link>
           <Link className="link" to="/ambiente">

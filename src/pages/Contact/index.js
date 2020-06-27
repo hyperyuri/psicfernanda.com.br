@@ -19,17 +19,23 @@ function Contact() {
         <div className="otherInfor">
           <ul className="logos">
             <li>
-              <a href=" ">
+              <a
+                target="_blank"
+                href="https://api.whatsapp.com/send?phone=5545991023801&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site!"
+              >
                 <FaWhatsapp />
               </a>
             </li>
             <li>
-              <a href="">
+              <a target="_blank" thref="">
                 <FaFacebookSquare />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/fernandaisayu/"
+              >
                 <FaInstagram />
               </a>
             </li>
