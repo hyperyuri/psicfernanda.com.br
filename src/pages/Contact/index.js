@@ -12,11 +12,11 @@ function Contact() {
           <p>Entre em contato para mais informações:</p>
           <input type="text" placeholder="Digite seu nome" />
           <input type="email" placeholder="Email" />
-          <textarea type="text" placeholder="Mensagem" />
           <input type="text" placeholder="Telefone" />
+          <textarea type="text" placeholder="Mensagem" />
           <button type="submit">Enviar Email</button>
         </div>
-        <div className="otherInfor">
+        {/* <div className="otherInfor">
           <ul className="logos">
             <li>
               <a
@@ -48,7 +48,7 @@ function Contact() {
             <li>CEP: 85801-140 | Cascavel, PR</li>
             <li>Telefone: (45) 3035-1009 e (45) 99102-3801</li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </>
   );
