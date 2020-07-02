@@ -13,7 +13,7 @@ export default function Routes() {
         <Route path="/" exact component={AboutMe} />
         <Route path="/ambiente" component={Office} />
         <Route path="/contato" component={Contact} />
-        <Route path="/blog" component={Blog} />
+        {/* <Route path="/blog" component={Blog} /> */}
       </Switch>
     </BrowserRouter>
   );

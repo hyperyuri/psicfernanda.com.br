@@ -11,7 +11,6 @@ div.headerContainer {
     background-color: #F5C03B;
     border-bottom: 1px solid #F5C03B;
 }
-
 div.headerContainer div.logo {
     display: flex;
     align-items: center;

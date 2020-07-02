@@ -1,0 +1,25 @@
+.aboutContainer {
+    font-family: Roboto, sans-serif;
+    width: 70%;
+    margin-top: 80px;
+    padding: 60px 40px;
+}
+
+.aboutContainer h1 {
+    color: #9A9A9A;
+    font-size: 2em;
+}
+
+.aboutContainer p {
+    color: #9A9A9A;
+    font-size: 1.3em;
+    line-height: 35px;
+}
+
+.aboutContainer div:not(:first-child) {
+    margin-top: 40px;
+}
+
+.aboutContainer h1, p {
+    animation: transitionIn 0.5s;
+}

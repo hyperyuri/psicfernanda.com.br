@@ -1,24 +1,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+
 div.contactContainer {
     font-family: Roboto, sans-serif;
     width: 70%;
     padding: 60px 40px;
     max-height: 100vh;
+    margin-top: 80px;
 }
-
-.detail {
+.header{
     position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 20%;
+    top: 0;
 }
-
 div.contactContainer form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    animation: transitionIn .5s;
 }
 
 div.contactContainer form div.containerUpContact {

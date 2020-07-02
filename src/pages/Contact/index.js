@@ -13,9 +13,9 @@ function Contact() {
           <div className="containerUpContact">
             <div className="title">
               <h3>Entre em contato para mais informações:</h3>
-              <input type="text" placeholder="Nome" />
-              <input type="email" placeholder="Email" />
-              <input type="text" placeholder="Telefone" />
+              <input type="text" placeholder="Nome" required />
+              <input type="email" placeholder="Email" required />
+              <input type="text" placeholder="Telefone" required />
             </div>
             <div className="infos">
               <ul className="logos">
@@ -50,7 +50,7 @@ function Contact() {
               </ul>
             </div>
           </div>
-          <textarea type="text" placeholder="Mensagem" />
+          <textarea type="text" placeholder="Mensagem" required />
           <button type="submit">Enviar Email</button>
         </form>
         <img className="detail" src={detail} alt="detail" />
