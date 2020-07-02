@@ -2,45 +2,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 div.contactContainer {
-    display: flex;
     font-family: Roboto, sans-serif;
     width: 70%;
     padding: 60px 40px;
+    max-height: 100vh;
 }
 
-div.inputable {
-    width: 100%;
+.detail {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+}
+
+div.contactContainer form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
-div.inputable input {
-    border: none;
-    margin-top: 10px;
-    border-bottom: 2px solid #e6b31e ;
-    padding: 10px 0;
+div.contactContainer form div.containerUpContact {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+div.contactContainer form ul.logos {
+    display: flex;
+    flex-direction: row;
     width: 50%;
 }
 
-div.inputable textarea {
-    border: 2px solid #e6b31e ;
-    width: 100%;
-    padding: 5px;
-    height: 200px;
-    border-radius: 3px;
-    margin: 30px 0;
-    resize: none;
+div.contactContainer form a {
+    color: #E6B31E;
 }
 
-div.inputable  button {
-    border:1px solid #e6b31e ;
-    background: #e6b31e;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 3px;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    
+div.contactContainer form ul.logos li:nth-child(2){
+    margin-left: 5px;
+}
+div.contactContainer form ul.logos li:nth-child(3){
+    margin-left: 5px;
+}
 
+div.contactContainer form div.title  {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+div.contactContainer form div.title h3 {
+    color: #E6B31E;
+    font-size: 20px;
+}
+div.contactContainer form div.title input {
+    width: 60%;
+    border: none;
+    margin-top: 25px;
+    border-bottom: 2px solid #E6B31E;
+    padding-bottom: 5px;
+    color: #9A9A9A;
+}
+div.contactContainer form ::placeholder {
+    color: #9A9A9A;
+}
+div.contactContainer form div.infos li.logos{
+    margin-left: 52px;
+}
+div.contactContainer form div.infos li {
+    color: #9A9A9A;
+    padding: 3px;
+}
+
+div.contactContainer form textarea {
+    width: 100%;
+    margin-top: 25px;
+    height: 200px;
+    border: 2px solid #E6B31E;
+    resize: none;
+    color: #9A9A9A;
+    padding: 5px;
+}
+
+
+
+div.contactContainer form button {
+    width: 100%;
+    margin-top: 25px;
+    height: 40px;
+    border: none;
+    background: #E6B31E;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+div.contactContainer form button:hover {
+    transition: 1s all;
+    transform: translateY(-3px);
+    opacity: 0.8;
 }
