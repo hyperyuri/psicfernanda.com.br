@@ -2,7 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    width: 70%;
+    padding: 60px 0;
 }
 .officeContainer img.image {
     width: 700px;
@@ -10,12 +12,9 @@
 }
 
 .officeContainer button {
-    position: absolute;
     z-index: 5;
-    left: 46%;
-    top: 82%;
-    width: 100px;
+    width: 100px;cursor: pointer;
     height: 50px;
-    background: rgba(0, 0, 0, .1);
+    background: rgba(0, 0, 0, .4);
     border: 1px solid rgba(0, 0, 0, 1);
 }

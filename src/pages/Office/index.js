@@ -3,6 +3,7 @@ import "./styles.css";
 import Header from "../../components/Header";
 import img2 from "../../assets/consultorio_1.jpeg";
 import img1 from "../../assets/consultorio_2.jpeg";
+import detail from "../../assets/detail.svg";
 import { MdCompareArrows } from "react-icons/md";
 
 function Office() {
@@ -23,6 +24,7 @@ function Office() {
             <MdCompareArrows size={20} />
           </button>
         </div>
+        <img className="detail" src={detail} alt="detail" />
       </div>
     </>
   );

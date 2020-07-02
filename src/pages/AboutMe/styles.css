@@ -20,6 +20,21 @@
     margin-top: 40px;
 }
 
-.aboutContainer h1, p {
-    animation: transitionIn 0.5s;
+@keyframes transitionToTop {
+    from {
+      opacity: 0;
+      transform: translateY(0);
+      transform: translateY(1000px);
+    }
+  
+    to  {
+      opacity: 1;
+      transform: translateY(0);
+  
+  
+    }
+  }
+.aboutContainer div {
+    animation: transitionIn 1s;
 }
+
