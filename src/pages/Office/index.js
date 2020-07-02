@@ -18,13 +18,13 @@ function Office() {
       <Header />
 
       <div className="officeContainer">
+        <p>Me chamo fernanda</p>
         <div>
           <img className="image" src={count === 0 ? img1 : img2} alt="img" />
           <button onClick={handleCount}>
             <MdCompareArrows size={20} />
           </button>
         </div>
-        <img className="detail" src={detail} alt="detail" />
       </div>
     </>
   );

@@ -18,12 +18,7 @@
      list-style: none;
    }
 
-   .detail {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 20%;
-}
+   
 
 input, textarea {
   background: transparent;

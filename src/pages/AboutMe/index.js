@@ -40,7 +40,6 @@ function AboutMe() {
             PageMaker including versions of Lorem Ipsum.
           </p>
         </div>
-        <img className="detail" src={detail} alt="detail" />
       </div>
     </>
   );

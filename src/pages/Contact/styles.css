@@ -103,3 +103,10 @@ div.contactContainer form button:hover {
     transform: translateY(-3px);
     opacity: 0.8;
 }
+
+.detail {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+}
