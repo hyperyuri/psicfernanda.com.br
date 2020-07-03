@@ -43,10 +43,11 @@ function Contact() {
               </ul>
               <ul>
                 <br />
-                <li>Odontoclin Clínica Odontológica</li>
                 <li>Rua Sete de Setembro, 2325 - Centro</li>
                 <li>CEP: 85801-140 | Cascavel, PR</li>
                 <li>Telefone: (45) 3035-1009 e (45) 99102-3801</li>
+                <br />
+                <li>Email: contato@psifernanda.com</li>
               </ul>
             </div>
           </div>

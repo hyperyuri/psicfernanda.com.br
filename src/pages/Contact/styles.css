@@ -56,7 +56,7 @@ div.contactContainer form div.title h3 {
     font-size: 20px;
 }
 div.contactContainer form div.title input {
-    width: 60%;
+    width: 65%;
     border: none;
     margin-top: 25px;
     border-bottom: 2px solid #E6B31E;
@@ -108,5 +108,6 @@ div.contactContainer form button:hover {
     position: fixed;
     right: 0;
     bottom: 0;
+    animation: transitionIn .8s;
     width: 20%;
 }
