@@ -22,19 +22,25 @@ function Contact() {
                 <li>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://api.whatsapp.com/send?phone=5545991023801&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site!"
                   >
                     <FaWhatsapp size={25} />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://facebook.com">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://facebook.com"
+                  >
                     <FaFacebook size={25} />
                   </a>
                 </li>
                 <li>
                   <a
                     target="_blank"
+                    rel="noopener noreferrer"
                     href="https://www.instagram.com/fernandaisayu/"
                   >
                     <FaInstagram size={25} />

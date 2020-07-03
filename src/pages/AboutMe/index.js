@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import detail from "../../assets/detail.svg";
 import Header from "../../components/Header";
 
 function AboutMe() {

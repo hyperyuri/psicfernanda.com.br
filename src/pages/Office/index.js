@@ -4,6 +4,11 @@ import Header from "../../components/Header";
 import img2 from "../../assets/consultorio_1.jpeg";
 import img1 from "../../assets/consultorio_2.jpeg";
 function Office() {
+  const [count, setCount] = useState(0);
+
+  function handleImage() {
+    setCount(count === 0 ? 1 : 0);
+  }
   return (
     <>
       <Header />
@@ -23,7 +28,9 @@ function Office() {
           </p>
         </div>
         <div>
-          <img className="image" src={img1} alt="img" />
+          <button onClick={handleImage}>
+            <img className="image" src={count === 0 ? img1 : img2} alt="img" />
+          </button>
         </div>
       </div>
     </>

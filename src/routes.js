@@ -4,7 +4,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import AboutMe from "./pages/AboutMe/";
 import Office from "./pages/Office/";
 import Contact from "./pages/Contact/";
-import Blog from "./pages/Blog/";
 
 export default function Routes() {
   return (
