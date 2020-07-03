@@ -1,0 +1,66 @@
+* 
+{ 
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  body {
+    height: 100%;
+    background-color: #FCFAF1;
+    overflow-x: hidden;
+  }
+
+
+   ul {
+     list-style: none;
+   }
+
+   
+
+input, textarea {
+  background: transparent;
+}
+
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10deg);
+  }
+
+  to  {
+    opacity: 1;
+    transform: translateX(0);
+
+
+  }
+}
+
+@keyframes transitionToRight{
+  from {
+    opacity: 0;
+    transform: translateX(-1000px);
+  }
+
+  to  {
+    opacity: 1;
+    transform: rotateX(0);
+
+  }
+}
+
+@keyframes transitionRight {
+  from {
+    opacity: 0;
+    transform: translateX(+1000px);
+  }
+
+  to  {
+    opacity: 1;
+    transform: rotateX(0);
+
+  }
+}
