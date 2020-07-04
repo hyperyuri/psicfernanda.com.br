@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import girasoll from "../../assets/tes.jpeg";
 import Header from "../../components/Header";
 
 function AboutMe() {
@@ -7,37 +8,41 @@ function AboutMe() {
     <>
       <Header />
       <div className="aboutContainer">
-        <div className="myName">
-          <h1>Meu Nome</h1>
-          <p>Fernanda Maria Alves</p>
+        <div className="aboutLeft">
+          <h2>CRP-08/31908</h2>
+
+          <div className="myHistory">
+            <h1>Sobre mim</h1>
+            <br />
+            <p>
+              Meu nome é Fernanda Maria Alves psicóloga clínica graduada pela
+              Universade Paranaense (UNIPAR), e desde criança meu sonho era ser
+              psicóloga, quando tive a oportunidade de concretizar este sonho
+              tive a absoluta certeza que ser psicóloga é contribuir para a
+              potencializaçao da qualidade de vida, sendo assim tenho como
+              objetivo oferecer um atendimento de qualidade, trabalhando novas
+              possibilidades diante do conflito e de maneira compromissada em
+              buscar, ao lado da pessoa, caminhos que melhorem a sua qualidade
+              de vida e lhe propiciem bem-estar. Coloco-me a disposição para o
+              seu processo terapeutico.
+            </p>
+            <br />
+            <br />
+          </div>
+          <div className="phrase">
+            <p>
+              "O homem está condenado a ser livre, condenado porque ele não
+              criou a si, e ainda assim é livre.
+            </p>
+            <p>
+              Pois tão logo é atirado ao mundo, torna-se responsável por tudo
+              que faz."
+            </p>
+            <h5>Jean-Paul Sartre</h5>
+          </div>
         </div>
-        <div className="myHistory">
-          <h1>Minha Historia</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
-        <div className="sobremim">
-          <h1>Sobre mim</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
+        <div className="aboutRight">
+          <img src={girasoll} alt="" />
         </div>
       </div>
     </>

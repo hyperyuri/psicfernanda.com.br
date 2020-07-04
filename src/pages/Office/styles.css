@@ -6,28 +6,34 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 80px;
+
     padding: 60px 40px;
 }
-.officeContainer div:nth-child(1) {
+.officeContainer div.left {
     display: flex;
     width: 35%;
+    height: 400px;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0 20px;
 }
 .officeContainer div {
     animation: transitionRight 1s;
 }
 
-.officeContainer div:nth-child(1) p {
+.officeContainer div.left p {
     color: #9A9A9A;
     font-size: 1.2em;
     line-height: 30px;
     text-align: start;
 }
 
-.officeContainer div:nth-child(2) {
+.officeContainer div.left h5{
+    color: #9A9A9A;
+    text-align: center;
+}
+
+.officeContainer div.right {
     width: 65%;
 }
 .officeContainer img.image {
