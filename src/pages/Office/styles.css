@@ -6,7 +6,8 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 80px;
-
+    width: 100%;
+    height: 100%;
     padding: 60px 40px;
 }
 .officeContainer div.left {
@@ -42,8 +43,17 @@
     border-radius: 3px;
     border: 3px solid #F5C03B;
 }
+.officeContainer .right .btn {
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
 
-.officeContainer button {
+
+.officeContainer .right button {
+    position: fixed;
+    justify-content: space-between;
     cursor: pointer;
     border: none;
 }

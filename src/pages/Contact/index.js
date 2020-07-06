@@ -8,6 +8,7 @@ function Contact() {
   return (
     <>
       <Header />
+
       <div className="contactContainer">
         <form action="">
           <div className="containerUpContact">
