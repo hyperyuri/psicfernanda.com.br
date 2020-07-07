@@ -1,22 +1,67 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import Header from "../../components/Header";
 import detail from "../../assets/detail.svg";
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 
+import api from "../../service/api";
+
 function Contact() {
+  const [user, setUser] = useState();
+
+  const handleChange = (event) => {
+    const axiosValue = { ...user };
+
+    axiosValue[event.target.name] = event.target.value;
+    setUser(axiosValue);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await api.post("/send", {
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+        text: user.text,
+      });
+      console.log(response);
+      alert("enviado email");
+    } catch (err) {
+      alert("erro ao enviar email");
+    }
+  };
+
   return (
     <>
       <Header />
 
       <div className="contactContainer">
-        <form action="">
+        <form action="" onSubmit={handleSubmit}>
           <div className="containerUpContact">
             <div className="title">
               <h3>Entre em contato para mais informações:</h3>
-              <input type="text" placeholder="Nome" required />
-              <input type="email" placeholder="Email" required />
-              <input type="text" placeholder="Telefone" required />
+              <input
+                type="text"
+                name="name"
+                placeholder="Nome"
+                required
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Telefone"
+                required
+                onChange={handleChange}
+              />
             </div>
             <div className="infos">
               <ul className="logos">
@@ -58,7 +103,13 @@ function Contact() {
               </ul>
             </div>
           </div>
-          <textarea type="text" placeholder="Mensagem" required />
+          <textarea
+            type="text"
+            name="text"
+            placeholder="Mensagem"
+            required
+            onChange={handleChange}
+          />
           <button type="submit">Enviar Email</button>
         </form>
         <img className="detail" src={detail} alt="detail" />
