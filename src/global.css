@@ -1,33 +1,28 @@
-* 
-{ 
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
-
-  
-  body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-color: #FCFAF1;
-    overflow-x: hidden;
-  }
-
-
-   ul {
-     list-style: none;
-   }
-
-   
-
-input, textarea {
-  background: transparent;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #fcfaf1;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  background: transparent;
+}
 
 @keyframes transitionIn {
   from {
@@ -35,24 +30,33 @@ input, textarea {
     transform: translateX(-10deg);
   }
 
-  to  {
+  to {
     opacity: 1;
     transform: translateX(0);
-
-
   }
 }
 
-@keyframes transitionToRight{
+@keyframes transitionBottom {
+  from {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes transitionToRight {
   from {
     opacity: 0;
     transform: translateX(-1000px);
   }
 
-  to  {
+  to {
     opacity: 1;
     transform: rotateX(0);
-
   }
 }
 
@@ -62,9 +66,8 @@ input, textarea {
     transform: translateX(+1000px);
   }
 
-  to  {
+  to {
     opacity: 1;
     transform: rotateX(0);
-
   }
 }

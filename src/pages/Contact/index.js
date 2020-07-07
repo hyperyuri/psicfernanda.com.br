@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import "./styles.css";
 import Header from "../../components/Header";
 import detail from "../../assets/detail.svg";
+import AlertModal from "../../components/AlertModal";
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 
 import api from "../../service/api";
 
 function Contact() {
-  const [user, setUser] = useState();
+  const [modal, setModal] = useState(false);
+
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    text: "",
+  });
 
   const handleChange = (event) => {
     const axiosValue = { ...user };
@@ -25,8 +33,10 @@ function Contact() {
         phone: user.phone,
         text: user.text,
       });
-      console.log(response);
-      alert("enviado email");
+      setModal(true);
+      setTimeout(() => {
+        return window.location.reload();
+      }, 3000);
     } catch (err) {
       alert("erro ao enviar email");
     }
@@ -34,6 +44,14 @@ function Contact() {
 
   return (
     <>
+      {!modal ? (
+        <> </>
+      ) : (
+        <>
+          {" "}
+          <AlertModal />{" "}
+        </>
+      )}
       <Header />
 
       <div className="contactContainer">
@@ -46,6 +64,7 @@ function Contact() {
                 name="name"
                 placeholder="Nome"
                 required
+                defaultValue={user.name}
                 onChange={handleChange}
               />
               <input
@@ -53,6 +72,7 @@ function Contact() {
                 name="email"
                 placeholder="Email"
                 required
+                defaultValue={user.email}
                 onChange={handleChange}
               />
               <input
@@ -60,6 +80,7 @@ function Contact() {
                 name="phone"
                 placeholder="Telefone"
                 required
+                defaultValue={user.phone}
                 onChange={handleChange}
               />
             </div>
@@ -99,7 +120,7 @@ function Contact() {
                 <li>CEP: 85801-140 | Cascavel, PR</li>
                 <li>Telefone: (45) 3035-1009 e (45) 99102-3801</li>
                 <br />
-                <li>Email: contato@psifernanda.com</li>
+                <li>Email: psifernandamaria@gmail.com</li>
               </ul>
             </div>
           </div>
@@ -108,6 +129,7 @@ function Contact() {
             name="text"
             placeholder="Mensagem"
             required
+            defaultValue={user.text}
             onChange={handleChange}
           />
           <button type="submit">Enviar Email</button>

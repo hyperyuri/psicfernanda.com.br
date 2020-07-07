@@ -1,59 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .officeContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 80px;
-    width: 100%;
-    height: 100%;
-    padding: 60px 40px;
-}
-.officeContainer div.left {
-    display: flex;
-    width: 35%;
-    height: 400px;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 20px;
-}
-.officeContainer div {
-    animation: transitionRight 1s;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100%;
+  padding: 60px 40px;
+  min-height: 100vh;
+  margin-top: 80px;
 }
 
-.officeContainer div.left p {
-    color: #9A9A9A;
-    font-size: 1.2em;
-    line-height: 30px;
-    text-align: start;
+.officeContainer img {
+  width: 600px;
 }
 
-.officeContainer div.left h5{
-    color: #9A9A9A;
-    text-align: center;
-}
-
-.officeContainer div.right {
-    width: 65%;
-}
-.officeContainer img.image {
-    width: 100%;
-    height: 400px;
-    border-radius: 3px;
-    border: 3px solid #F5C03B;
-}
-.officeContainer .right .btn {
-width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
-
-
-.officeContainer .right button {
-    position: fixed;
-    justify-content: space-between;
-    cursor: pointer;
-    border: none;
+.officeContainer .right {
+  display: flex;
+  flex-direction: ;
 }

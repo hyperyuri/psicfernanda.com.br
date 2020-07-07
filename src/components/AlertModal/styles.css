@@ -1,0 +1,41 @@
+.modalContainer {
+  width: 100vw;
+  position: absolute;
+  z-index: 5;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.componentModal {
+  position: absolute;
+  font-family: Roboto;
+  width: 300px;
+  height: 60px;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: rgb(6, 182, 6);
+  color: white;
+  animation: transitionBottom 1s;
+  box-shadow: 1em;
+  box-shadow: 3px 4px rgba(41, 37, 37, 0.1);
+}
+
+.componentModal h1 {
+  padding-top: 12px;
+}
+
+.componentModal div {
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right, #ffffff, #dddddd);
+}

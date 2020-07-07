@@ -27,16 +27,15 @@ function Office() {
           </div>
         </div>
         <div className="right">
-          <div className="btn">
-            <button onClick={handleImage}>
-              <FaAngleLeft />
-            </button>
-            <button onClick={handleImage}>
-              <FaAngleRight />
-            </button>
-          </div>
+          <button onClick={handleImage}>
+            <FaAngleLeft size={50} />
+          </button>
 
-          <img className="image" src={count === 0 ? img1 : img2} alt="img" />
+          <img src={count === 0 ? img1 : img2} alt="img" />
+
+          <button onClick={handleImage}>
+            <FaAngleRight size={50} />
+          </button>
         </div>
       </div>
     </>
