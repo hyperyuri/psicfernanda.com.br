@@ -28,13 +28,13 @@ function Office() {
         </div>
         <div className="right">
           <button onClick={handleImage}>
-            <FaAngleLeft size={50} />
+            <FaAngleLeft size={50} color="#e5e5e5" />
           </button>
 
           <img src={count === 0 ? img1 : img2} alt="img" />
 
           <button onClick={handleImage}>
-            <FaAngleRight size={50} />
+            <FaAngleRight size={50} color="#e5e5e5" />
           </button>
         </div>
       </div>
