@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, HashRouter } from "react-router-dom";
 
 import AboutMe from "./pages/AboutMe/";
 import Office from "./pages/Office/";
@@ -9,10 +9,12 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact component={AboutMe} />
-        <Route path="/consultorio" component={Office} />
-        <Route path="/contato" component={Contact} />
-        {/* <Route path="/blog" component={Blog} /> */}
+        <HashRouter>
+          <Route path="/" exact component={AboutMe} />
+          <Route path="/consultorio" component={Office} />
+          <Route path="/contato" component={Contact} />
+          {/* <Route path="/blog" component={Blog} /> */}
+        </HashRouter>
       </Switch>
     </BrowserRouter>
   );
