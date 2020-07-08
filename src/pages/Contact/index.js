@@ -11,6 +11,7 @@ import api from "../../service/api";
 function Contact() {
   const [button, setButton] = useState(false);
   const [textButton, setTextButton] = useState(false);
+
   const [modal, setModal] = useState(false);
   const [modalError, setModalError] = useState(false);
 
