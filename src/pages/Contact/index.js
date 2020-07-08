@@ -40,22 +40,20 @@ function Contact() {
         phone: user.phone,
         text: user.text,
       });
+      console.log(user);
       setModal(true);
-      setTimeout(() => {
-        setTextButton(false);
-        setButton(false);
-      }, 1000);
 
       console.log(response);
       setTimeout(() => {
-        return window.location.reload();
+        window.location.reload();
       }, 3000);
     } catch (err) {
       setModalError(true);
+
       setTimeout(() => {
-        setModalError(false);
-        setButton(false);
         setTextButton(false);
+        setButton(false);
+        setModalError(false);
       }, 3000);
     }
   };

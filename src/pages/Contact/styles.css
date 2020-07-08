@@ -107,13 +107,13 @@ div.contactContainer form button:disabled:hover {
   opacity: 1;
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚫</text></svg>")
       16 0,
-    auto; /*!emojicursor.app*/
+    auto;
+  border: 2px solid red;
 }
 div.contactContainer form button:hover {
-  transition: 1s all;
+  transition: 0.2s all;
   transform: translateY(-3px);
   opacity: 0.8;
-  border: 1px solid red;
 }
 
 .detail {
