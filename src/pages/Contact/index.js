@@ -158,7 +158,7 @@ function Contact() {
             onChange={handleChange}
           />
           <button disabled={button} type="submit">
-            {textButton !== true ? "Enviar email" : "Email está sendo enviado"}
+            {textButton !== true ? "Enviar email" : "Enviando email..."}
           </button>
         </form>
         <img className="detail" src={detail} alt="detail" />
