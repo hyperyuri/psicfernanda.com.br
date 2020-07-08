@@ -23,7 +23,7 @@ div.contactContainer form {
   width: 70%;
   flex-direction: column;
   align-items: flex-start;
-  animation: transitionToRight 0.5s;
+  animation: transitionRight 0.8s;
 }
 
 div.contactContainer form div.containerUpContact {
@@ -101,10 +101,19 @@ div.contactContainer form button {
   cursor: pointer;
 }
 
+div.contactContainer form button:disabled:hover {
+  transition: none;
+  transform: translateY(0);
+  opacity: 1;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚫</text></svg>")
+      16 0,
+    auto; /*!emojicursor.app*/
+}
 div.contactContainer form button:hover {
   transition: 1s all;
   transform: translateY(-3px);
   opacity: 0.8;
+  border: 1px solid red;
 }
 
 .detail {

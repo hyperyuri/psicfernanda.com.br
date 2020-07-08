@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import "./styles.css";
 import Header from "../../components/Header";
 import detail from "../../assets/detail.svg";
-import AlertModal from "../../components/AlertModal";
+import ModalOk from "../../components/ModalOk";
+import ModalError from "../../components/ModalError";
 import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 
 import api from "../../service/api";
 
 function Contact() {
+  const [button, setButton] = useState(false);
+  const [textButton, setTextButton] = useState(false);
   const [modal, setModal] = useState(false);
+  const [modalError, setModalError] = useState(false);
 
   const [user, setUser] = useState({
     name: "",
@@ -26,6 +30,8 @@ function Contact() {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setButton(true);
+    setTextButton(true);
     try {
       const response = await api.post("/send", {
         name: user.name,
@@ -34,12 +40,22 @@ function Contact() {
         text: user.text,
       });
       setModal(true);
+      setTimeout(() => {
+        setTextButton(false);
+        setButton(false);
+      }, 1000);
+
       console.log(response);
       setTimeout(() => {
         return window.location.reload();
       }, 3000);
     } catch (err) {
-      alert("erro ao enviar email");
+      setModalError(true);
+      setTimeout(() => {
+        setModalError(false);
+        setButton(false);
+        setTextButton(false);
+      }, 3000);
     }
   };
 
@@ -50,7 +66,15 @@ function Contact() {
       ) : (
         <>
           {" "}
-          <AlertModal />{" "}
+          <ModalOk />{" "}
+        </>
+      )}
+      {!modalError ? (
+        <> </>
+      ) : (
+        <>
+          {" "}
+          <ModalError />{" "}
         </>
       )}
       <Header />
@@ -133,7 +157,9 @@ function Contact() {
             defaultValue={user.text}
             onChange={handleChange}
           />
-          <button type="submit">Enviar Email</button>
+          <button disabled={button} type="submit">
+            {textButton !== true ? "Enviar email" : "Email está sendo enviado"}
+          </button>
         </form>
         <img className="detail" src={detail} alt="detail" />
       </div>

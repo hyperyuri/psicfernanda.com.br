@@ -1,0 +1,35 @@
+.modalErrorContainer {
+  width: 100vw;
+  position: absolute;
+  z-index: 5;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.componentModalError {
+  position: absolute;
+  font-family: Roboto;
+  width: 300px;
+  height: 60px;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(248, 62, 48);
+  color: white;
+  animation: transitionBottom 1s;
+  border-top: 3px solid rgb(255, 255, 255);
+  box-shadow: 3px 4px rgba(41, 37, 37, 0.1);
+}
+
+.componentModalError p {
+  font-size: 12px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-function AlertModal() {
+function ModalOk() {
   return (
     <div className="modalContainer">
       <div className="componentModal">
@@ -13,4 +13,4 @@ function AlertModal() {
   );
 }
 
-export default AlertModal;
+export default ModalOk;

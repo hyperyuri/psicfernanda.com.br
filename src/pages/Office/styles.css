@@ -12,6 +12,10 @@
   margin-top: 80px;
 }
 
+.officeContainer div {
+  animation: transitionTop 0.8s;
+}
+
 .officeContainer img {
   width: 600px;
   height: 400px;

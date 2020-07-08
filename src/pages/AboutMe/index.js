@@ -15,17 +15,17 @@ function AboutMe() {
             <h1>Sobre mim</h1>
             <br />
             <p>
-              Meu nome é Fernanda Maria Alves psicóloga clínica graduada pela
-              Universade Paranaense (UNIPAR), e desde criança meu sonho era ser
-              psicóloga, quando tive a oportunidade de concretizar este sonho
-              tive a absoluta certeza que ser psicóloga é contribuir para a
-              potencializaçao da qualidade de vida, sendo assim tenho como
+              Meu nome é Fernanda Maria Alves, psicóloga clínica graduada pela
+              Universade Paranaense (UNIPAR), desde criança meu sonho era ser
+              psicóloga, quando tive a oportunidade de concretizar isto tive a
+              absoluta certeza que ser psicóloga é contribuir para a
+              potencializaçao da qualidade de vida, sendo assim, tenho como
               objetivo oferecer um atendimento de qualidade, trabalhando novas
               possibilidades diante do conflito e de maneira compromissada em
               buscar, ao lado da pessoa, caminhos que melhorem a sua qualidade
-              de vida e lhe propiciem bem-estar. Coloco-me a disposição para o
-              seu processo terapeutico.
+              de vida e lhe propiciem bem-estar.
             </p>
+            <p>Coloco-me a disposição para o seu processo terapeutico.</p>
             <br />
             <br />
           </div>
