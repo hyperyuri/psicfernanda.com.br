@@ -8,7 +8,7 @@ import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
 import api from "../../service/api";
 
 function Contact() {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(true);
 
   const [user, setUser] = useState({
     name: "",
@@ -33,7 +33,7 @@ function Contact() {
         phone: user.phone,
         text: user.text,
       });
-      setModal(true);
+      setModal(false);
       console.log(response);
       setTimeout(() => {
         return window.location.reload();
