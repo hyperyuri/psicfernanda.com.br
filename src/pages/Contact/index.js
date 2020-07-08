@@ -34,6 +34,7 @@ function Contact() {
         text: user.text,
       });
       setModal(true);
+      console.log(response);
       setTimeout(() => {
         return window.location.reload();
       }, 3000);
