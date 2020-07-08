@@ -18,7 +18,7 @@ function Header() {
             <Link className="link" to="/">
               <p>Sobre mim</p>
             </Link>
-            <Link className="link" to="/ambiente">
+            <Link className="link" to="/consultorio">
               <p>Meu consultório</p>
             </Link>
             {/* <Link className="link" to="/blog">

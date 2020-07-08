@@ -21,20 +21,20 @@ function Office() {
         <div className="left">
           <div>
             <p>
-              Consultório aconchegante para atender tanto crianças, adulto ou
+              Consultório aconchegante para atender tanto crianças, adultos ou
               casais.
             </p>
           </div>
         </div>
         <div className="right">
           <button onClick={handleImage}>
-            <FaAngleLeft size={50} color="#e5e5e5" />
+            <FaAngleLeft size={50} color="#e6b31e" />
           </button>
 
           <img src={count === 0 ? img1 : img2} alt="img" />
 
           <button onClick={handleImage}>
-            <FaAngleRight size={50} color="#e5e5e5" />
+            <FaAngleRight size={50} color="#e6b31e" />
           </button>
         </div>
       </div>
