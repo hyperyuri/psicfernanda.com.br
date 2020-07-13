@@ -2,12 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
 
 div.headerContainer {
-  position: fixed;
+  position: absolute;
   top: 0;
   display: flex;
   flex-direction: row;
   height: 80px;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   text-align: center;
   justify-content: space-between;
@@ -31,26 +31,52 @@ div.headerContainer div.logo img {
   height: 70px;
 }
 
-.links {
-  display: flex;
+.linkMenu {
+  position: relative;
+  display: none;
   max-width: 10%;
   flex-wrap: nowrap;
   flex-direction: column;
+  z-index: 20;
   margin-right: 20px;
 }
-.links button {
+.linkMenu button {
   margin: 0;
   background: transparent;
   border: none;
   cursor: pointer;
 }
-.links div {
+
+.links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.linkMenu div {
+  transition: all 0.5s;
   height: 5px;
   width: 30px;
   margin: 3px;
   background: #fff;
 }
-/* 
+
+.linkMenu div.active {
+  transition: all 1s;
+  transform: rotateY(20deg);
+}
+
+.linkMenu div.active:nth-child(1) {
+  transform: rotate(45deg) translate(1.5px, 5.5px);
+}
+.linkMenu div.active:nth-child(2) {
+  opacity: 0;
+}
+
+.linkMenu div.active:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -10px);
+}
+
 .link {
   padding: 10px;
   margin-left: 10px;
@@ -77,4 +103,37 @@ div.headerContainer div.logo img {
   color: #f5c03b;
   border-radius: 3px;
   opacity: 0.9;
-} */
+}
+
+@media (max-width: 925px) {
+  .links {
+    display: none;
+  }
+  .linkMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  div.headerContainer div.logo h1 {
+    margin-left: 3px;
+    font-size: 1.8em;
+  }
+  div.headerContainer div.logo img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  div.headerContainer div.logo h1 {
+    margin-left: 3px;
+    font-size: 1.6em;
+  }
+  div.headerContainer div.logo img {
+    margin-left: 10px;
+    width: 45px;
+    height: 45px;
+  }
+}

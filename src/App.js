@@ -5,7 +5,11 @@ import "./global.css";
 function App() {
   return (
     <>
-      <Routes />
+      <div className="container">
+        <div className="content">
+          <Routes />
+        </div>
+      </div>
     </>
   );
 }

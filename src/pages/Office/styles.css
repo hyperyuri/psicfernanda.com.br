@@ -4,12 +4,10 @@
   font-family: Roboto, sans-serif;
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  justify-content: center;
   padding: 60px 40px;
-  min-height: 100%;
-  margin-top: 80px;
 }
 
 .officeContainer div {

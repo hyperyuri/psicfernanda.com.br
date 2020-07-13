@@ -4,15 +4,15 @@ import "./styles.css";
 
 function ModalError() {
   return (
-    <div className="modalErrorContainer">
+    <div className="modalLinkContainer">
       <div className="componentModalLink">
-        <Link className="link" to="/">
+        <Link className="name" to="/">
           <p>Sobre mim</p>
         </Link>
-        <Link className="link" to="/consultorio">
+        <Link className="name" to="/consultorio">
           <p>Meu consultório</p>
         </Link>
-        <Link className="link" to="/contato">
+        <Link className="name" to="/contato">
           <p>Contato</p>
         </Link>
       </div>

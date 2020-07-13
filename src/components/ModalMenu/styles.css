@@ -1,24 +1,21 @@
-.modalErrorContainer {
-  width: 100%;
-  min-height: 100%;
+.modalLinkContainer {
   position: absolute;
-  top: 0.5;
-  z-index: 5;
-  background: rgba(255, 255, 255, 0.1);
+  top: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.componentModalLink {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  background: #f5c03b;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  background-color: white;
-  position: absolute;
-  color: white;
+  z-index: 15;
+  animation: transitionBottomModal 0.8s;
+}
+
+.name p {
+  font-size: 2em;
+  width: 300;
+  margin: 20px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }

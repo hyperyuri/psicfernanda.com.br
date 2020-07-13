@@ -80,9 +80,48 @@ function Contact() {
 
       <div className="contactContainer">
         <form action="" onSubmit={handleSubmit}>
+          <div className="infos-later">
+            <ul className="logos">
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://api.whatsapp.com/send?phone=5545991023801&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20site!"
+                >
+                  <FaWhatsapp size={25} />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.facebook.com/psiFerAlves/"
+                >
+                  <FaFacebook size={25} />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/psifernanda.alves/"
+                >
+                  <FaInstagram size={25} />
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <br />
+              <li>Rua Sete de Setembro, 2325 - Centro</li>
+              <li>CEP: 85801-140 | Cascavel, PR</li>
+              <li>Telefone: (45) 3035-1009 e (45) 99102-3801</li>
+              <br />
+              <li>Email: psifernandamaria@gmail.com</li>
+            </ul>
+          </div>
           <div className="containerUpContact">
             <div className="title">
-              <h3>Entre em contato para mais informações:</h3>
+              <h3>Entre em contato comigo:</h3>
               <input
                 type="text"
                 name="name"
