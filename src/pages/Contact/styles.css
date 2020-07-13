@@ -99,6 +99,7 @@ div.contactContainer form button {
   color: white;
   border-radius: 3px;
   cursor: pointer;
+  z-index: 10;
 }
 
 div.contactContainer form button:disabled:hover {
