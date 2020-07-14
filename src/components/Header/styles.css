@@ -127,13 +127,7 @@ div.headerContainer div.logo img {
 }
 
 @media (max-width: 400px) {
-  div.headerContainer div.logo h1 {
-    margin-left: 3px;
-    font-size: 1.6em;
-  }
-  div.headerContainer div.logo img {
-    margin-left: 10px;
-    width: 45px;
-    height: 45px;
+  div.contactContainer form div.infos-later {
+    margin-top: 80px;
   }
 }

@@ -203,6 +203,6 @@ div.contactContainer form button:hover {
 }
 @media (max-width: 360px) {
   div.contactContainer {
-    margin-top: 150px !important;
+    padding-top: 150px !important;
   }
 }
