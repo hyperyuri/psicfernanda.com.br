@@ -12,7 +12,7 @@ function Contact() {
   const [button, setButton] = useState(false);
   const [textButton, setTextButton] = useState(false);
 
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(true);
   const [modalError, setModalError] = useState(false);
 
   const [user, setUser] = useState({
