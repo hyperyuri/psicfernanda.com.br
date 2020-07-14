@@ -155,7 +155,6 @@ div.contactContainer form button:hover {
 
 @media (max-width: 780px) {
   div.contactContainer form {
-    align-items: center;
     justify-content: center;
   }
   div.contactContainer form div.title {
@@ -193,11 +192,17 @@ div.contactContainer form button:hover {
 
 @media (max-width: 812px) {
   div.contactContainer {
-    margin-top: 30px;
+    margin-top: 60px !important;
   }
 }
-@media (max-width: 667px) {
+
+@media (max-width: 400px) {
   div.contactContainer {
-    margin-top: 90px;
+    margin-top: 80px !important;
+  }
+}
+@media (max-width: 360px) {
+  div.contactContainer {
+    margin-top: 150px !important;
   }
 }
