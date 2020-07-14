@@ -16,7 +16,7 @@ div.contactContainer form {
   width: 70%;
   flex-direction: column;
   align-items: flex-start;
-  animation: transitionRight 0.8s;
+  animation: transitionRight 0.75s;
 }
 
 div.contactContainer form div.containerUpContact {
