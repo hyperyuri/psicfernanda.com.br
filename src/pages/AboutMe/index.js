@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import detail from "../../assets/detail.svg";
 import girasoll from "../../assets/tes.jpeg";
 import Header from "../../components/Header";
 
@@ -44,6 +45,7 @@ function AboutMe() {
         <div className="aboutRight">
           <img src={girasoll} alt="" />
         </div>
+        <img className="detailAbout" src={detail} alt="detail" />
       </div>
     </>
   );

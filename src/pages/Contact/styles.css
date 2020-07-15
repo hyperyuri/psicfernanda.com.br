@@ -117,7 +117,7 @@ div.contactContainer form button:hover {
   position: fixed;
   right: 0;
   bottom: 0;
-  animation: transitionIn 0.8s;
+  animation: transitionIn 0.3s;
   width: 20%;
   max-width: 450px;
 }
@@ -149,13 +149,15 @@ div.contactContainer form button:hover {
   }
   .detail {
     width: 30%;
-    opacity: 0.3;
+    opacity: 0.2;
+    animation: none;
   }
 }
 
 @media (max-width: 780px) {
   div.contactContainer form {
     justify-content: center;
+    align-items: center;
   }
   div.contactContainer form div.title {
     align-items: center;
@@ -191,6 +193,9 @@ div.contactContainer form button:hover {
 }
 
 @media (max-width: 812px) {
+  .detail {
+    width: 50%;
+  }
   div.contactContainer {
     margin-top: 60px !important;
   }

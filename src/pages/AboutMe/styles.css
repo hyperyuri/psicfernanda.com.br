@@ -15,7 +15,15 @@
   flex-direction: column;
   width: 60%;
 }
-
+.detailAbout {
+  position: fixed;
+  display: none;
+  right: 0;
+  bottom: 0;
+  animation: none;
+  width: 20%;
+  max-width: 450px;
+}
 .aboutContainer div.aboutRight {
   width: 40%;
   display: flex;
@@ -87,6 +95,11 @@ h2 {
 }
 
 @media (max-width: 569px) {
+  .detailAbout {
+    display: flex;
+    width: 50%;
+    opacity: 0.2;
+  }
   .aboutContainer {
     padding: 60px 10px;
   }

@@ -20,9 +20,11 @@ function Office() {
       <div className="officeContainer">
         <div className="left">
           <div>
+            <p>O consultório foi pensado para ser um espaço aconchegante.</p>
             <p>
-              Consultório aconchegante para atender tanto crianças, adultos ou
-              casais.
+              Localizada na clínica Odontoclin, contamos com sala de espera,
+              consultório climatizado e uma decoração pensada especialmente para
+              melhor lhe atender.
             </p>
           </div>
         </div>
@@ -31,12 +33,15 @@ function Office() {
             <FaAngleLeft size={50} color="#e6b31e" />
           </button>
 
-          <img src={count === 0 ? img1 : img2} alt="img" />
+          <button className="btnImg" onClick={handleImage}>
+            <img src={count === 0 ? img1 : img2} alt="img" />
+          </button>
 
           <button onClick={handleImage}>
             <FaAngleRight size={50} color="#e6b31e" />
           </button>
         </div>
+        <p className="p-later">clique na imagem para visualizar mais fotos</p>
       </div>
     </>
   );
