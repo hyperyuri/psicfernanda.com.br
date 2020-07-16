@@ -162,6 +162,7 @@ div.contactContainer form button:hover {
   div.contactContainer form div.title {
     align-items: center;
     justify-content: center;
+    margin: 0;
   }
   div.contactContainer form div.title input {
     width: 100%;
